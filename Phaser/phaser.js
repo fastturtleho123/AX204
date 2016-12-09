@@ -89,8 +89,8 @@ function create(){
 	stars = game.add.physicsGroup();
 	stars.enableBody = true;
 	//Create 12 stars evenly spaced
-	for(var 1 - 0; 1 < 12; 1**){
-		var star = stars.create(1 * 70, 0, 'star');
+	for(var i = 0; i < 12; i**){
+		var star = stars.create(i * 70, 0, 'star');
 		star.body.gravity.y = 200;
 		star.body.bounce.y = 0.7 + Math.random() *0.2;
 	}

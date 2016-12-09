@@ -33,7 +33,7 @@ function create(){
 
 
 	//Ledges
-	var ledge = platforms.create(400,400, 'ground');
+	var ledge = platforms.create(400,400,= 'ground');
 	ground.body.immovable = true;
 	ledge = platforms.create(-150,250, 'ground');
 	ground.body.immovable = true;
@@ -69,15 +69,15 @@ function create(){
 		enemy2.body.gravity.y = 500;
 		enemy2.body.collideWorldBounds = true;
 
-		enemy 3 = game.add.sprite(200, 20, 'baddie');
+		enemy3 = game.add.sprite(200, 20, 'baddie');
 		// animate the sprite
-		enemy 3.animations.add('left', [0,1], 10, true);
-		enemy 3.animations.add('right', [2,3], 10, true);
+		enemy3.animations.add('left', [0,1], 10, true);
+		enemy3.animations.add('right', [2,3], 10, true);
 		game.physics.arcade.enable(enemy 3);
 		// creating physics for enemy sprite
-		enemy 3.body.bounce.y = 0.2;
-		enemy 3.body.gravity.y = 500;
-		enemy 3.body.collideWorldBounds = true;
+		enemy3.body.bounce.y = 0.2;
+		enemy3.body.gravity.y = 500;
+		enemy3.body.collideWorldBounds = true;
 
 
 

@@ -73,7 +73,7 @@ function create(){
 		// animate the sprite
 		enemy3.animations.add('left', [0,1], 10, true);
 		enemy3.animations.add('right', [2,3], 10, true);
-		game.physics.arcade.enable(enemy 3);
+		game.physics.arcade.enable(enemy3);
 		// creating physics for enemy sprite
 		enemy3.body.bounce.y = 0.2;
 		enemy3.body.gravity.y = 500;

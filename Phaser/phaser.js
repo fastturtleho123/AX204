@@ -13,7 +13,7 @@ function preload(){
 	game.load.image('ground','assets/platform.png');
 	game.load.image('star','assets/star.png');
 	game.load.spritesheet('dude','assets/dude.png',32,48);
-	game.load.spritesheet('baddle','assets/baddle.png',32,32);
+	game.load.spritesheet('baddle','assets/baddie.png',32,32);
 }
 
 function create(){
@@ -63,7 +63,7 @@ function create(){
 		// animate the sprite
 		enemy2.animations.add('left', [0,1], 10, true);
 		enemy2.animations.add('right', [2,3], 10, true);
-		game.physics.arcade.enable(enemy1);
+		game.physics.arcade.enable(enemy2);
 		// creating physics for enemy sprite
 		enemy2.body.bounce.y = 0.2;
 		enemy2.body.gravity.y = 500;

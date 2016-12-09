@@ -33,7 +33,7 @@ function create(){
 
 
 	//Ledges
-	var ledge = platforms.create(400,400,= 'ground');
+	var ledge = platforms.create(400,400, 'ground');
 	ground.body.immovable = true;
 	ledge = platforms.create(-150,250, 'ground');
 	ground.body.immovable = true;
